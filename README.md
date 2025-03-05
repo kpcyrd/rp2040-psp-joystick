@@ -8,10 +8,14 @@ elf2uf2-rs -d target/thumbv6m-none-eabi/release/rp2040-psp-joystick
 
 ## Bill of materials
 
-- rp2040
+- rp2040-zero
 - sh1106
 - Dual Axis Mini XY Thumb Joystick Sensor (PSP-like)
 - some wire
+
+[![](docs/device.jpg)](docs/device.jpg)
+
+[![](docs/usage.jpg)](docs/usage.jpg)
 
 ## Pins
 
@@ -23,6 +27,14 @@ There are 4 pins that need to be connected:
 - `GPIO29` - joystick adc (y)
 - `3V3` - VDD (power, 3.3V or 5V are both fine)
 - `GND` - GND (ground)
+
+Soldering example (somewhat chaotic/unclean):
+
+<details>
+
+[![](docs/wires.jpg)](docs/wires.jpg)
+
+</details>
 
 ![](https://www.waveshare.com/img/devkit/RP2040-Zero/RP2040-Zero-details-7.jpg)
 
